@@ -1,0 +1,41 @@
+{
+  "name": "@geprog/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint config for Typescript, Vue.js and Jest",
+  "homepage": "https://geprog.com",
+  "repository": "github:geprog/eslint-config",
+  "license": "MIT",
+  "files": [
+    "/index.js",
+    "/jest.js",
+    "/vue.js",
+    "/patch"
+  ],
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "0.11.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "7.0.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.3.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "eslint-plugin-vue": "7.9.0",
+    "eslint-plugin-vue-scoped-css": "1.1.0",
+    "vue-eslint-parser": "7.6.0"
+  },
+  "devDependencies": {
+    "prettier": "2.3.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7"
+  }
+}
