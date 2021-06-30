@@ -23,7 +23,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    '@typescript-eslint/no-shadow': 'error',
 
     'import/no-unresolved': 'off', // disable as this is handled by tsc itself
     'import/first': 'error',
