@@ -5,8 +5,6 @@ specifiers:
   '@rushstack/eslint-patch': ^1.0.6
   '@typescript-eslint/eslint-plugin': 4.24.0
   '@typescript-eslint/parser': 4.24.0
-  '@vue/eslint-config-prettier': 6.0.0
-  '@vue/eslint-config-typescript': 7.0.0
   eslint-config-prettier: 8.1.0
   eslint-plugin-import: 2.22.1
   eslint-plugin-jest: 24.3.1
@@ -23,8 +21,6 @@ dependencies:
   '@rushstack/eslint-patch': 1.0.6
   '@typescript-eslint/eslint-plugin': 4.24.0_@typescript-eslint+parser@4.24.0
   '@typescript-eslint/parser': 4.24.0
-  '@vue/eslint-config-prettier': 6.0.0_9549fc22a95481f968b00a28b7bdb3c2
-  '@vue/eslint-config-typescript': 7.0.0_b2ee0598bc255d583c1a8169c0ac1959
   eslint-config-prettier: 8.1.0
   eslint-plugin-import: 2.22.1
   eslint-plugin-jest: 24.3.1_5b866b4de3de38be284808bf3ad8338d
@@ -272,35 +268,6 @@ packages:
       eslint-visitor-keys: 2.1.0
     dev: false
 
-  /@vue/eslint-config-prettier/6.0.0_9549fc22a95481f968b00a28b7bdb3c2:
-    resolution: {integrity: sha512-wFQmv45c3ige5EA+ngijq40YpVcIkAy0Lihupnsnd1Dao5CBbPyfCzqtejFLZX1EwH/kCJdpz3t6s+5wd3+KxQ==}
-    peerDependencies:
-      eslint: '>= 5.0.0'
-      eslint-plugin-prettier: ^3.1.0
-      prettier: '>= 1.13.0'
-    dependencies:
-      eslint-config-prettier: 6.15.0
-      eslint-plugin-prettier: 3.3.1_cb83c6521e9b5721f9e2e4f5255364a6
-      prettier: 2.3.0
-    dev: false
-
-  /@vue/eslint-config-typescript/7.0.0_b2ee0598bc255d583c1a8169c0ac1959:
-    resolution: {integrity: sha512-UxUlvpSrFOoF8aQ+zX1leYiEBEm7CZmXYn/ZEM1zwSadUzpamx56RB4+Htdjisv1mX2tOjBegNUqH3kz2OL+Aw==}
-    engines: {node: ^10.12.0 || >=12.0.0}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^4.4.0
-      '@typescript-eslint/parser': ^4.4.0
-      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
-      eslint-plugin-vue: ^5.2.3 || ^6.0.0 || ^7.0.0
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 4.24.0_@typescript-eslint+parser@4.24.0
-      '@typescript-eslint/parser': 4.24.0
-      eslint-plugin-vue: 7.9.0
-      vue-eslint-parser: 7.6.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /acorn-jsx/5.3.1_acorn@7.4.1:
     resolution: {integrity: sha512-K0Ptm/47OKfQRpNQ2J/oIN/3QYiK6FwW+eJbILhsdxh2WTLdl+30o8aGdTbm5JbffpFFAg/g+zi1E+jvJha5ng==}
     peerDependencies:
@@ -528,15 +495,6 @@ packages:
   /escape-string-regexp/1.0.5:
     resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
     engines: {node: '>=0.8.0'}
-    dev: false
-
-  /eslint-config-prettier/6.15.0:
-    resolution: {integrity: sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=3.14.1'
-    dependencies:
-      get-stdin: 6.0.0
     dev: false
 
   /eslint-config-prettier/8.1.0:
@@ -785,11 +743,6 @@ packages:
       function-bind: 1.1.1
       has: 1.0.3
       has-symbols: 1.0.2
-    dev: false
-
-  /get-stdin/6.0.0:
-    resolution: {integrity: sha512-jp4tHawyV7+fkkSKyvjuLZswblUtz+SQKzSWnBbii16BuZksJlU1wuBYXY75r+duh/llF1ur6oNwi+2ZzjKZ7g==}
-    engines: {node: '>=4'}
     dev: false
 
   /glob-parent/5.1.2:

@@ -17,15 +17,14 @@ module.exports = {
     './jest.js',
 
     'plugin:vue/vue3-recommended',
-    '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    './prettier.js',
     'plugin:vue-scoped-css/recommended',
     'plugin:@intlify/vue-i18n/recommended',
   ],
 
   rules: {
     'vue/attribute-hyphenation': 'error',
+    // enable in accordance with https://github.com/prettier/eslint-config-prettier#vuehtml-self-closing
     'vue/html-self-closing': [
       'error',
       {
@@ -84,10 +83,6 @@ module.exports = {
     'vue-scoped-css/no-unused-selector': 'error',
     'vue-scoped-css/no-parsing-error': 'error',
     'vue-scoped-css/require-scoped': 'error',
-
-    // set this again because some extended config disabled it
-    'prettier/prettier': 'error',
-    curly: 'error',
   },
 
   settings: {
