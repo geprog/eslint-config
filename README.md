@@ -26,6 +26,8 @@ module.exports = {
 
 Install dependencies: `pnpm install`
 
-### Publish
+### Releasing
 
-Run `pnpm publish --access public`
+1. Bump version in `package.json`
+1. Run `pnpm publish`
+1. Create git tag.
