@@ -16,22 +16,22 @@
     "format:fix": "prettier --write ."
   },
   "dependencies": {
-    "@intlify/eslint-plugin-vue-i18n": "0.11.0",
-    "@rushstack/eslint-patch": "^1.0.6",
-    "@typescript-eslint/eslint-plugin": "4.24.0",
-    "@typescript-eslint/parser": "4.24.0",
-    "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "24.3.1",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-promise": "4.3.1",
+    "@intlify/eslint-plugin-vue-i18n": "0.11.1",
+    "@rushstack/eslint-patch": "1.0.6",
+    "@typescript-eslint/eslint-plugin": "4.28.1",
+    "@typescript-eslint/parser": "4.28.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jest": "24.3.6",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "eslint-plugin-vue": "7.9.0",
-    "eslint-plugin-vue-scoped-css": "1.1.0",
+    "eslint-plugin-vue": "7.12.1",
+    "eslint-plugin-vue-scoped-css": "1.2.1",
     "vue-eslint-parser": "7.6.0"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "prettier": "2.3.2"
   },
   "peerDependencies": {
     "eslint": ">= 7"
