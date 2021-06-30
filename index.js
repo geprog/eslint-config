@@ -54,6 +54,10 @@ module.exports = {
     'no-console': 'warn',
     'no-useless-concat': 'error',
     curly: ['error'],
+    'prefer-const': 'error',
+    'spaced-comment': ['error', 'always'],
+    'object-shorthand': ['error', 'always'],
+    'no-useless-rename': 'error',
   },
   overrides: [
     {
