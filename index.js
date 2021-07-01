@@ -62,6 +62,7 @@ const eslintConfig = {
     'spaced-comment': ['error', 'always'],
     'object-shorthand': ['error', 'always'],
     'no-useless-rename': 'error',
+    eqeqeq: 'error',
   },
   overrides: [
     {
