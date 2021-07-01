@@ -74,6 +74,21 @@ const eslintConfig = {
     {
       files: ['**/*.{ts,vue}'],
       extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      rules: {
+        '@typescript-eslint/strict-boolean-expressions': [
+          'error',
+          {
+            allowString: false,
+            allowNumber: false,
+            allowNullableObject: false,
+            allowNullableBoolean: false,
+            allowNullableString: false,
+            allowNullableNumber: false,
+            allowAny: false,
+            allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
+          },
+        ],
+      },
     },
   ],
   reportUnusedDisableDirectives: true,
