@@ -1,10 +1,10 @@
-module.exports = {
+// @ts-check
+/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
+const eslintConfig = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.eslint.json'],
     sourceType: 'module',
     ecmaVersion: 2018,
-    tsconfigRootDir: __dirname,
   },
   plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
   extends: [
@@ -70,3 +70,5 @@ module.exports = {
   ],
   reportUnusedDisableDirectives: true,
 };
+
+module.exports = eslintConfig;

@@ -1,14 +1,15 @@
-module.exports = {
+// @ts-check
+/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
+const eslintConfig = {
   env: {
     browser: true,
   },
 
   parser: 'vue-eslint-parser',
   parserOptions: {
+    // @ts-ignore see https://github.com/vuejs/vue-eslint-parser#parseroptionsparser
     parser: '@typescript-eslint/parser',
-    project: ['./tsconfig.eslint.json'],
     sourceType: 'module',
-    // tsconfigRootDir: __dirname,
     extraFileExtensions: ['.vue'],
   },
 
@@ -102,3 +103,5 @@ module.exports = {
     },
   ],
 };
+
+module.exports = eslintConfig;

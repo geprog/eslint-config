@@ -1,11 +1,11 @@
-name: Check Formatting
+name: Formatting and Types
 on:
   - push
   - pull_request
 
 jobs:
-  check-formatting:
-    name: Check Formatting
+  formatting-types:
+    name: Formatting and Types
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,3 +34,6 @@ jobs:
 
       - name: Check formatting
         run: pnpm run format
+
+      - name: Check types
+        run: pnpm run typecheck

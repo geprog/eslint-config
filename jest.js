@@ -1,4 +1,6 @@
-module.exports = {
+// @ts-check
+/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
+const eslintConfig = {
   settings: {
     jest: {
       version: 26,
@@ -21,3 +23,5 @@ module.exports = {
     },
   ],
 };
+
+module.exports = eslintConfig;
