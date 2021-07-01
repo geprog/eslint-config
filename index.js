@@ -17,13 +17,20 @@ const eslintConfig = {
     'plugin:promise/recommended',
   ],
   rules: {
-    // make typescript eslint rules even more strict
-    '@typescript-eslint/no-explicit-any': 'error',
+    // enable scope analysis rules
+    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'error',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': 'error',
+
+    // make typescript eslint rules even more strict
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
 
     'import/no-unresolved': 'off', // disable as this is handled by tsc itself
     'import/first': 'error',
