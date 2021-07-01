@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-vue: 7.12.1
   eslint-plugin-vue-scoped-css: 1.2.1
   prettier: 2.3.2
-  typescript: ^4.3.5
+  typescript: 4.3.5
   vue-eslint-parser: 7.6.0
 
 dependencies:
