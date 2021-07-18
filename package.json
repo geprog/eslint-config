@@ -15,6 +15,7 @@
   "scripts": {
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
+    "release": "semantic-release",
     "typecheck": "tsc"
   },
   "dependencies": {
