@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-
-env:
-  YARN_CACHE_FOLDER: ~/.yarn
-
 jobs:
   release:
     name: Release
