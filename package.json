@@ -1,6 +1,6 @@
 {
   "name": "@geprog/eslint-config",
-  "version": "0.2.0",
+  "version": "0.0.0-semantic-release",
   "description": "ESLint config for Typescript, Vue.js and Jest",
   "homepage": "https://geprog.com",
   "repository": "github:geprog/eslint-config",
@@ -33,8 +33,13 @@
     "vue-eslint-parser": "7.6.0"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/npm": "7.1.3",
+    "@semantic-release/release-notes-generator": "9.0.3",
     "@typescript-eslint/experimental-utils": "4.28.1",
     "prettier": "2.3.2",
+    "semantic-release": "17.4.4",
     "typescript": "4.3.5"
   },
   "peerDependencies": {
