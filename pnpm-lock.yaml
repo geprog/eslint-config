@@ -21,7 +21,7 @@ specifiers:
   prettier: 2.3.2
   semantic-release: 17.4.4
   typescript: 4.3.5
-  vue-eslint-parser: 7.6.0
+  vue-eslint-parser: 7.11.0
 
 dependencies:
   '@intlify/eslint-plugin-vue-i18n': 0.11.1
@@ -35,8 +35,8 @@ dependencies:
   eslint-plugin-promise: 5.1.0
   eslint-plugin-simple-import-sort: 7.0.0
   eslint-plugin-vue: 7.12.1
-  eslint-plugin-vue-scoped-css: 1.2.1_vue-eslint-parser@7.6.0
-  vue-eslint-parser: 7.6.0
+  eslint-plugin-vue-scoped-css: 1.2.1_vue-eslint-parser@7.11.0
+  vue-eslint-parser: 7.11.0
 
 devDependencies:
   '@semantic-release/commit-analyzer': 8.0.1_semantic-release@17.4.4
@@ -1060,7 +1060,7 @@ packages:
       eslint: '>=5.0.0'
     dev: false
 
-  /eslint-plugin-vue-scoped-css/1.2.1_vue-eslint-parser@7.6.0:
+  /eslint-plugin-vue-scoped-css/1.2.1_vue-eslint-parser@7.11.0:
     resolution: {integrity: sha512-YUZy4fG5oRh2jVqULt8v6pDg9PSj10d5IaDMTplW3jgqli7tZkFg951j4GjOX/BxVBElLJHbgYTsy2TWoJ/ENA==}
     engines: {node: ^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0 || >=14.0.0}
     peerDependencies:
@@ -1074,7 +1074,7 @@ packages:
       postcss-scss: 3.0.5
       postcss-selector-parser: 6.0.6
       postcss-styl: 0.8.0
-      vue-eslint-parser: 7.6.0
+      vue-eslint-parser: 7.11.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2881,6 +2881,23 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+
+  /vue-eslint-parser/7.11.0:
+    resolution: {integrity: sha512-qh3VhDLeh773wjgNTl7ss0VejY9bMMa0GoDG2fQVyDzRFdiU3L7fw74tWZDHNQXdZqxO3EveQroa9ct39D2nqg==}
+    engines: {node: '>=8.10'}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      debug: 4.3.1
+      eslint-scope: 5.1.1
+      eslint-visitor-keys: 1.3.0
+      espree: 6.2.1
+      esquery: 1.4.0
+      lodash: 4.17.21
+      semver: 6.3.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /vue-eslint-parser/7.6.0:
     resolution: {integrity: sha512-QXxqH8ZevBrtiZMZK0LpwaMfevQi9UL7lY6Kcp+ogWHC88AuwUPwwCIzkOUc1LR4XsYAt/F9yHXAB/QoD17QXA==}

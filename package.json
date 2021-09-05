@@ -31,7 +31,7 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-vue": "7.12.1",
     "eslint-plugin-vue-scoped-css": "1.2.1",
-    "vue-eslint-parser": "7.6.0"
+    "vue-eslint-parser": "7.11.0"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "8.0.1",
