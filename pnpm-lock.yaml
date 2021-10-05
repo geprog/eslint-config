@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-simple-import-sort: 7.0.0
   eslint-plugin-vue: 7.12.1
   eslint-plugin-vue-scoped-css: 1.2.1
-  prettier: 2.3.2
+  prettier: 2.4.1
   semantic-release: 18.0.0
   typescript: 4.3.5
   vue-eslint-parser: 7.6.0
@@ -28,7 +28,7 @@ dependencies:
   eslint-config-prettier: 8.3.0
   eslint-plugin-import: 2.23.4
   eslint-plugin-jest: 24.3.6_9f7f9adfd48dcf5bc5ded5084e3ae85a
-  eslint-plugin-prettier: 3.4.0_ae3805332b62cec006ed24a9ec35ea79
+  eslint-plugin-prettier: 3.4.0_17f48bd368adef070d55b664dd7cfbbe
   eslint-plugin-promise: 5.1.0
   eslint-plugin-simple-import-sort: 7.0.0
   eslint-plugin-vue: 7.12.1
@@ -38,7 +38,7 @@ dependencies:
 devDependencies:
   '@geprog/semantic-release-config': 1.0.0_semantic-release@18.0.0
   '@typescript-eslint/experimental-utils': 4.28.1_typescript@4.3.5
-  prettier: 2.3.2
+  prettier: 2.4.1
   semantic-release: 18.0.0
   typescript: 4.3.5
 
@@ -1044,7 +1044,7 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-prettier/3.4.0_ae3805332b62cec006ed24a9ec35ea79:
+  /eslint-plugin-prettier/3.4.0_17f48bd368adef070d55b664dd7cfbbe:
     resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -1056,7 +1056,7 @@ packages:
         optional: true
     dependencies:
       eslint-config-prettier: 8.3.0
-      prettier: 2.3.2
+      prettier: 2.4.1
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -2280,8 +2280,8 @@ packages:
       fast-diff: 1.2.0
     dev: false
 
-  /prettier/2.3.2:
-    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
+  /prettier/2.4.1:
+    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -2847,6 +2847,7 @@ packages:
     resolution: {integrity: sha512-57H3ACYFXeo1IaZ1w02sfA71wI60MGco/IQFjOqK+WtKoprh7Go2/yvd2HPtoJILO2Or84ncLccI4xoHMTSbGg==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
