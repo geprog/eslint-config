@@ -27,7 +27,7 @@
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-jest": "24.3.6",
     "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-promise": "5.1.1",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-vue": "7.12.1",
     "eslint-plugin-vue-scoped-css": "1.2.1",
