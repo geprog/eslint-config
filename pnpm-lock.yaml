@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@geprog/semantic-release-config': 1.0.0
   '@intlify/eslint-plugin-vue-i18n': 0.11.1
-  '@rushstack/eslint-patch': 1.0.6
+  '@rushstack/eslint-patch': 1.0.9
   '@typescript-eslint/eslint-plugin': 4.28.1
   '@typescript-eslint/experimental-utils': 4.28.1
   '@typescript-eslint/parser': 4.28.1
@@ -22,7 +22,7 @@ specifiers:
 
 dependencies:
   '@intlify/eslint-plugin-vue-i18n': 0.11.1
-  '@rushstack/eslint-patch': 1.0.6
+  '@rushstack/eslint-patch': 1.0.9
   '@typescript-eslint/eslint-plugin': 4.28.1_dd9e8ceaccaad13387e03adf5b254629
   '@typescript-eslint/parser': 4.28.1_typescript@4.3.5
   eslint-config-prettier: 8.3.0
@@ -239,8 +239,8 @@ packages:
       '@octokit/openapi-types': 8.3.0
     dev: true
 
-  /@rushstack/eslint-patch/1.0.6:
-    resolution: {integrity: sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==}
+  /@rushstack/eslint-patch/1.0.9:
+    resolution: {integrity: sha512-yk9Xj/3bUxyz3azMXW8qigLqXWEr2R0h9G7PVnnmjNQdlZLN+aESqCTnVN7ubtYUIQfW32/v8+AXsbpL1ryI1A==}
     dev: false
 
   /@semantic-release/commit-analyzer/9.0.1_semantic-release@18.0.0:
@@ -2847,6 +2847,7 @@ packages:
     resolution: {integrity: sha512-57H3ACYFXeo1IaZ1w02sfA71wI60MGco/IQFjOqK+WtKoprh7Go2/yvd2HPtoJILO2Or84ncLccI4xoHMTSbGg==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
