@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    name: Test with ${{ matrix.eslint-version }} on ${{ matrix.os }}
+    name: Test with eslint@${{ matrix.eslint-version }} on node@${{ matrix.node-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
