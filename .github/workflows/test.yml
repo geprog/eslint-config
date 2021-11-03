@@ -1,4 +1,4 @@
-name: Formatting and Types
+name: Test
 
 on:
   pull_request:
@@ -9,9 +9,14 @@ on:
       - main
 
 jobs:
-  formatting-types:
-    name: Formatting and Types
-    runs-on: ubuntu-latest
+  test:
+    name: Test with ${{ matrix.eslint-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [14, 16]
+        eslint-version: [7]
+        os: [ubuntu-latest]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -20,7 +25,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: ${{ matrix.node-version }}
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
@@ -37,8 +42,8 @@ jobs:
           version: 6
           run_install: true
 
-      - name: Check formatting
-        run: pnpm run -r format
+      - name: Install eslint@${{ matrix.eslint-version }}
+        run: pnpm --filter @geprog/eslint-config-test install eslint@${{ matrix.eslint-version }}
 
-      - name: Check types
-        run: pnpm run -r typecheck
+      - name: Run eslint@${{ matrix.eslint-version }}
+        run: pnpm --filter @geprog/eslint-config-test exec eslint "." ".*"
