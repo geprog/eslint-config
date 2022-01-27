@@ -1,0 +1,7 @@
+warning: Unexpected console statement (no-console) at index.ts:1:1:
+> 1 | console.log('test');
+    | ^
+  2 | 
+
+
+1 warning found.

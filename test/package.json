@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-test",
+  "scripts": {
+    "lint": "eslint --format codeframe . .*"
+  },
+  "devDependencies": {
+    "@geprog/eslint-config": "workspace:*",
+    "eslint": "7",
+    "prettier": "2.4.1",
+    "typescript": "4.3.5"
+  }
+}
