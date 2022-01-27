@@ -16,6 +16,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "release": "semantic-release",
+    "test": "cd test && pnpm eslint --format codeframe . > eslint-output.snap.tmp || true && diff eslint-output.snap eslint-output.snap.tmp && rm eslint-output.snap.tmp",
+    "test:update": "cd test && pnpm eslint --format codeframe . > eslint-output.snap || true",
     "typecheck": "tsc"
   },
   "dependencies": {

@@ -1,8 +1,5 @@
 {
   "name": "eslint-config-test",
-  "scripts": {
-    "lint": "eslint --format codeframe . .*"
-  },
   "devDependencies": {
     "@geprog/eslint-config": "workspace:*",
     "eslint": "7",

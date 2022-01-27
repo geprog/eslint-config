@@ -46,8 +46,4 @@ jobs:
         run: pnpm --filter eslint-config-test install eslint@${{ matrix.eslint-version }}
 
       - name: Run eslint@${{ matrix.eslint-version }}
-        uses: GuillaumeFalourd/assert-command-line-output@v2
-        with:
-          command_line: pnpm --filter eslint-config-test lint "." ".*"
-          assert_file_path: eslint-output.snap
-          expected_result: PASSED
+        run: pnpm run test
