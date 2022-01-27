@@ -3,11 +3,10 @@
 require('@geprog/eslint-config/patch/modern-module-resolution');
 
 module.exports = {
-  extends: ['@geprog'],
+  extends: ['@geprog/eslint-config/vue'],
 
   parserOptions: {
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,
-    extraFileExtensions: ['.cjs'],
   },
 };
