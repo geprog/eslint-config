@@ -17,7 +17,7 @@ const eslintConfig = {
         '@typescript-eslint/unbound-method': 'off',
         'jest/unbound-method': 'error',
         'jest/prefer-expect-assertions': ['error', { onlyFunctionsWithAsyncKeyword: true }],
-        'jest/lowercase-name': ['error', { ignore: ['describe'] }],
+        'jest/prefer-lowercase-title': ['error', { ignore: ['describe'] }],
         'jest/no-hooks': 'off',
       },
     },
