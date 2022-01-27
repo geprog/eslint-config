@@ -17,32 +17,34 @@
     "format:fix": "prettier --write .",
     "release": "semantic-release",
     "test": "cd test && pnpm eslint --format codeframe . > eslint-output.snap.tmp || true && diff eslint-output.snap eslint-output.snap.tmp && rm eslint-output.snap.tmp",
+    "test:lint": "cd test && pnpm eslint --format codeframe .",
     "test:update": "cd test && pnpm eslint --format codeframe . > eslint-output.snap || true",
     "typecheck": "tsc"
   },
   "dependencies": {
     "@intlify/eslint-plugin-vue-i18n": "1.2.0",
     "@rushstack/eslint-patch": "1.1.0",
-    "@typescript-eslint/eslint-plugin": "5.6.0",
-    "@typescript-eslint/parser": "5.6.0",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-jest": "25.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jest": "26.0.0",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-promise": "5.2.0",
+    "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "eslint-plugin-vue": "8.2.0",
-    "eslint-plugin-vue-scoped-css": "2.0.0",
-    "vue-eslint-parser": "8.0.1"
+    "eslint-plugin-vue": "8.4.0",
+    "eslint-plugin-vue-scoped-css": "2.1.0",
+    "vue-eslint-parser": "8.2.0"
   },
   "devDependencies": {
     "@geprog/semantic-release-config": "1.0.0",
-    "@typescript-eslint/experimental-utils": "5.6.0",
+    "@typescript-eslint/experimental-utils": "5.10.1",
+    "eslint": "8",
     "prettier": "2.5.1",
-    "semantic-release": "18.0.1",
-    "typescript": "4.5.3"
+    "semantic-release": "19.0.2",
+    "typescript": "4.5.5"
   },
   "peerDependencies": {
-    "eslint": ">= 7"
+    "eslint": "^7.0.0 || ^8.0.0"
   }
 }
