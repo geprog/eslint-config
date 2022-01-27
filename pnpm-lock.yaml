@@ -12,6 +12,7 @@ importers:
       '@typescript-eslint/parser': 5.10.1
       eslint: '8'
       eslint-config-prettier: 8.3.0
+      eslint-formatter-codeframe: ^7.32.1
       eslint-plugin-import: 2.25.4
       eslint-plugin-jest: 26.0.0
       eslint-plugin-prettier: 4.0.0
@@ -41,6 +42,7 @@ importers:
       '@geprog/semantic-release-config': 1.0.0_semantic-release@19.0.2
       '@typescript-eslint/experimental-utils': 5.10.1_eslint@8.7.0+typescript@4.5.5
       eslint: 8.7.0
+      eslint-formatter-codeframe: 7.32.1
       prettier: 2.5.1
       semantic-release: 19.0.2
       typescript: 4.5.5
@@ -60,6 +62,12 @@ importers:
       vue: 3.2.29
 
 packages:
+
+  /@babel/code-frame/7.12.11:
+    resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
+    dependencies:
+      '@babel/highlight': 7.16.10
+    dev: true
 
   /@babel/code-frame/7.16.7:
     resolution: {integrity: sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg==}
@@ -1286,6 +1294,14 @@ packages:
     dependencies:
       eslint: 8.7.0
     dev: false
+
+  /eslint-formatter-codeframe/7.32.1:
+    resolution: {integrity: sha512-DK/3Q3+zVKq/7PdSYiCxPrsDF8H/TRMK5n8Hziwr4IMkMy+XiKSwbpj25AdajS63I/B61Snetq4uVvX9fOLyAg==}
+    engines: {node: ^10.12.0 || >=12.0.0}
+    dependencies:
+      '@babel/code-frame': 7.12.11
+      chalk: 4.1.2
+    dev: true
 
   /eslint-import-resolver-node/0.3.6:
     resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}
