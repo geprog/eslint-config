@@ -1,3 +1,13 @@
+error: 'count' of property found, but never used (vue/no-unused-properties) at ScriptSetup.vue:9:3:
+   7 | 
+   8 | defineProps<{
+>  9 |   count: number;
+     |   ^
+  10 | }>();
+  11 | 
+  12 | defineEmits<{
+
+
 error: raw text 'test' is used (@intlify/vue-i18n/no-raw-text) at Test.vue:3:9:
   1 | <template>
   2 |   <span>{{ foo }}</span>
@@ -42,5 +52,5 @@ warning: Unexpected console statement (no-console) at index.ts:3:1:
   4 | 
 
 
-3 errors and 2 warnings found.
+4 errors and 2 warnings found.
 1 warning potentially fixable with the `--fix` option.

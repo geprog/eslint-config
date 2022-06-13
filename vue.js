@@ -3,6 +3,7 @@
 const eslintConfig = {
   env: {
     browser: true,
+    'vue/setup-compiler-macros': true,
   },
 
   parser: 'vue-eslint-parser',
