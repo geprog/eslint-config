@@ -24,7 +24,16 @@ const eslintConfig = {
           'error',
           {
             // allow the use of vitest functions
-            allowedFunctionCalls: ['beforeAll', 'afterAll', 'beforeEach', 'afterEach', 'describe', 'it', 'test', 'vi.mock'],
+            allowedFunctionCalls: [
+              'beforeAll',
+              'afterAll',
+              'beforeEach',
+              'afterEach',
+              'describe',
+              'it',
+              'test',
+              'vi.mock',
+            ],
           },
         ],
       },
