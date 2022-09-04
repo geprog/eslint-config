@@ -20,6 +20,22 @@ const eslintConfig = {
         'jest/prefer-lowercase-title': ['error', { ignore: ['describe'] }],
         'jest/no-hooks': 'off',
         'jest/prefer-snapshot-hint': 'off',
+        'jest/require-hook': [
+          'error',
+          {
+            // allow the use of vitest functions
+            allowedFunctionCalls: [
+              'beforeAll',
+              'afterAll',
+              'beforeEach',
+              'afterEach',
+              'describe',
+              'it',
+              'test',
+              'vi.mock',
+            ],
+          },
+        ],
       },
     },
   ],
