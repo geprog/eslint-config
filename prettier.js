@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['prettier/prettier'],
+  extends: ['prettier'],
   rules: {
     // enable in accordance with https://github.com/prettier/eslint-config-prettier#curly
     curly: ['error', 'all'],
