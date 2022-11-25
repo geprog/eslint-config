@@ -63,7 +63,7 @@ const eslintConfig = {
     'vue/new-line-between-multi-line-property': 'error',
     'vue/padding-line-between-blocks': 'error',
     'vue/multi-word-component-names': 'off',
-    'vue/no-reserved-component-names ': 'off',
+    'vue/no-reserved-component-names': 'off',
 
     // i18n rules
     '@intlify/vue-i18n/valid-message-syntax': 'error',
