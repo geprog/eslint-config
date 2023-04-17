@@ -8,7 +8,16 @@ const eslintConfig = {
   },
   overrides: [
     {
-      files: ['test/**/*'],
+      files: [
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/*.test.js',
+        '**/*.test.jsx',
+        '**/*.spec.ts',
+        '**/*.spec.tsx',
+        '**/*.spec.js',
+        '**/*.spec.jsx',
+      ],
       env: {
         jest: true, // now **/*.test.js files' env has both es6 *and* jest
       },
