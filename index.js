@@ -10,6 +10,7 @@ const eslintConfig = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
     './prettier.js',
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -29,7 +30,6 @@ const eslintConfig = {
 
     // make typescript eslint rules even more strict
     '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
 
     'import/no-unresolved': 'off', // disable as this is handled by tsc itself
@@ -73,7 +73,10 @@ const eslintConfig = {
     },
     {
       files: ['**/*.{ts,vue}'],
-      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      extends: [
+        'plugin:@typescript-eslint/recommended-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+      ],
     },
   ],
   reportUnusedDisableDirectives: true,
