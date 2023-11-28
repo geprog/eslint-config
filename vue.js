@@ -64,6 +64,24 @@ const eslintConfig = {
     'vue/padding-line-between-blocks': 'error',
     'vue/multi-word-component-names': 'off',
     'vue/no-reserved-component-names': 'off',
+    'vue/no-bare-strings-in-template': [
+      'error',
+      {
+        attributes: {
+          '/.+/': [
+            'alt',
+            'aria-label',
+            'aria-placeholder',
+            'aria-roledescription',
+            'aria-valuetext',
+            'label',
+            'placeholder',
+            'text',
+            'title',
+          ],
+        },
+      },
+    ],
 
     // i18n rules
     '@intlify/vue-i18n/valid-message-syntax': 'error',
